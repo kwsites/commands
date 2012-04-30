@@ -1,0 +1,16 @@
+{
+   "name":              "commands",
+   "description":       "Command line arguments reader",
+   "version":           "0.0.1",
+   "author":            "Steve King <steve@mydev.co>",
+   "contributors":      [ { "name": "Steve King", "email": "steve@mydev.co" } ],
+   "dependencies":      {},
+   "devDependencies":   {},
+   "keywords":          ["command", "configuration"],
+   "repository":        "git://github.com/steveukx/commands.js",
+   "main":              "lib/commands",
+   "bin":               {},
+   "scripts":           {},
+   "config":            {},
+   "engines":           { "node": ">= 0.4.1" }
+}
