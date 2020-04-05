@@ -1,16 +1,43 @@
 {
-   "name":              "commands",
-   "description":       "Command line arguments reader",
-   "version":           "0.0.7",
-   "author":            "Steve King <steve@mydev.co>",
-   "contributors":      [ { "name": "Steve King", "email": "steve@mydev.co" } ],
-   "dependencies":      {},
-   "devDependencies":   {},
-   "keywords":          ["command", "configuration"],
-   "repository":        "git://github.com/steveukx/commands.js",
-   "main":              "lib/commands",
-   "bin":               {},
-   "scripts":           {},
-   "config":            {},
-   "engines":           { "node": ">= 0.4.1" }
+  "name": "@kwsites/commands",
+  "description": "Command line arguments reader",
+  "version": "1.0.0",
+  "author": "Steve King <steve@mydev.co>",
+  "contributors": [
+    {
+      "name": "Steve King",
+      "email": "steve@mydev.co"
+    }
+  ],
+  "scripts": {
+    "test": "jest",
+    "clean": "rimraf ./dist",
+    "build": "tsc --project tsconfig.publish.json",
+    "preversion": "yarn run clean && yarn run build && yarn test",
+    "postversion": "npm publish --access=public && git push && git push --tags && yarn clean"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-typescript": "^7.8.3",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "babel-jest": "^25.1.0",
+    "jest": "^25.1.0",
+    "rimraf": "^3.0.1",
+    "typescript": "~3.7.2"
+  },
+  "keywords": [
+    "command",
+    "configuration"
+  ],
+  "repository": "git@github.com:kwsites/commands.git",
+  "main": "dist/commands.js",
+  "types": "dist/commands.d.ts",
+  "license": "MIT",
+  "files": [
+    "dist/*.js",
+    "dist/*.map",
+    "dist/*.d.ts"
+  ]
 }
