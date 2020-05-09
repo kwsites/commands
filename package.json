@@ -1,16 +1,23 @@
 {
-   "name":              "commands",
-   "description":       "Command line arguments reader",
-   "version":           "0.0.7",
-   "author":            "Steve King <steve@mydev.co>",
-   "contributors":      [ { "name": "Steve King", "email": "steve@mydev.co" } ],
-   "dependencies":      {},
-   "devDependencies":   {},
-   "keywords":          ["command", "configuration"],
-   "repository":        "git://github.com/steveukx/commands.js",
-   "main":              "lib/commands",
-   "bin":               {},
-   "scripts":           {},
-   "config":            {},
-   "engines":           { "node": ">= 0.4.1" }
+  "name": "@kwsites/commands",
+  "description": "Command line arguments reader",
+  "version": "0.0.7",
+  "author": "Steve King <steve@mydev.co>",
+  "devDependencies": {
+    "@types/node": "^13.13.5",
+    "@zeit/ncc": "^0.22.1"
+  },
+  "keywords": [
+    "command",
+    "configuration"
+  ],
+  "repository": "git://github.com/kwsites/commands",
+  "main": "dist/index.js",
+  "scripts": {
+    "package": "ncc build src/index.ts"
+  },
+  "engines": {
+    "node": ">= 0.4.1"
+  },
+  "files": ["dist/*"]
 }
