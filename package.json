@@ -19,5 +19,6 @@
   "engines": {
     "node": ">= 0.4.1"
   },
-  "files": ["dist/*"]
+  "files": ["dist/*"],
+  "license": "MIT"
 }
