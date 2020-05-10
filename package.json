@@ -13,7 +13,8 @@
   "repository": "git://github.com/kwsites/commands",
   "main": "dist/index.js",
   "scripts": {
-    "package": "ncc build src/index.ts"
+    "package": "ncc build src/index.ts",
+    "preversion": "npm run package"
   },
   "engines": {
     "node": ">= 0.4.1"
