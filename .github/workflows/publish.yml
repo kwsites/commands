@@ -19,7 +19,7 @@ jobs:
         if: steps.cache-modules.outputs.cache-hit != 'true'
         run: npm install
       - name: Package
-        - run npm run package
+        run: npm run package
       - name: Test
         run: npm test
       - name: Publish
