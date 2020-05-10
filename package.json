@@ -19,5 +19,8 @@
     "node": ">= 0.4.1"
   },
   "files": ["dist/*"],
-  "license": "MIT"
+  "license": "MIT",
+  "config": {
+    "access": "public"
+  }
 }
