@@ -17,8 +17,8 @@ jobs:
           key: ${{ runner.OS }}-build-${{ hashFiles('package.json') }}
       - name: Build
         if: steps.cache-modules.outputs.cache-hit != 'true'
-        - run: npm install
-        - run: npm run package
+          - run: npm install
+          - run: npm run package
       - name: Test
         run: npm test
       - name: Publish
