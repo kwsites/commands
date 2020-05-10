@@ -1,7 +1,6 @@
 {
   "name": "@kwsites/commands",
   "description": "Command line arguments reader",
-  "version": "0.0.7",
   "author": "Steve King <steve@mydev.co>",
   "devDependencies": {
     "@types/node": "^13.13.5",
